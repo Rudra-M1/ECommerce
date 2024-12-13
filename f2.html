@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Style by choice</title>
+        <link rel="shortcut icon" type="x-icon" href="Image/title logo.png">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"/>
+
+        <style>
+            body {
+                font-family: Arial, sans-serif;
+                margin: 0;
+                padding: 0;
+                font-family: Arial, sans-serif;
+                background-image: url('image/bgimg.jpg'); /* Replace 'background.jpg' with your actual background image */
+                background-size: cover;
+                background-position: center;
+                background-repeat: no-repeat;
+                height: 100vh;
+                justify-content: center;
+                align-items: center;
+            }
+    
+            #container {
+                display: flex;
+                max-width: 800px;
+                margin: 20px auto;
+                background-color: #fff;
+                box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            }
+    
+            #product-images {
+                max-width: 400px;
+                padding: 20px;
+                text-align: center;
+            }
+    
+            #main-img {
+                max-width: 100%;
+                margin-bottom: 10px;
+            }
+    
+            .small-img {
+                max-width: 80px;
+                margin-right: 5px;
+                cursor: pointer;
+            }
+    
+            #product-details {
+                flex: 1;
+                padding: 20px;
+            }
+    
+            #product-details h2 {
+                font-size: 24px;
+                margin-bottom: 10px;
+            }
+    
+            #product-details p {
+                font-size: 16px;
+                margin-bottom: 20px;
+            }
+    
+            #select-color {
+                background-color: #3498db;
+                color: #fff;
+                padding: 10px;
+                border: none;
+                font-size: 16px;
+                cursor: pointer;
+            }
+    
+            #add-to-cart {
+                background-color: #27ae60;
+                color: #fff;
+                padding: 10px;
+                border: none;
+                font-size: 16px;
+                cursor: pointer;
+            }
+        </style>
+    </head>
+    
+     <body>
+     <script src="script.js"></script>
+
+    <section id="header" class="header-1">
+        <div id="header-img">
+        <a href="#"><img src="Image\logo.png" class="logo" alt="logo" width="19%" height="19%"></a>
+        </div>
+
+    <div>
+         <ul id="navbar">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="Shop.html">Shop</a></li>
+            <li><a href="Food.html">Food</a></li>
+            <li><a href="blog.html">Blog</a></li>
+            <li><a href="About.html">About</a></li>
+            <li> <a href="Contact.html">Contact</a></li>
+            <li><a href="cart.html"><i class="fa fa-bag-shopping"></i></a>
+          
+    </section>
+    <div id="container">
+        <div id="product-images">
+            <img id="main-img" src="Image/Products/f2.jpg" alt="Main Product Image">
+            <img class="small-img" src="Image/Products/small img/sm5.jpg" alt="Small Image 1" onclick="changeImage('small1.jpg')">
+            <img class="small-img" src="Image/Products/small img/sm5.jpg" alt="Small Image 2" onclick="changeImage('small2.jpg')">
+           
+        </div>
+        <div id="product-details">
+            <h2>Product Name</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac urna eu felis dapibus condimentum a id ipsum.</p>
+            <select id="select-color">
+                <option value="blue">L</option>
+                <option value="red">XL</option>
+                <option value="green">M</option>
+                <option value="yellow">XM</option>
+                <option value="yellow">X</option>
+                <option value="yellow">XX</option>
+            </select>
+            <button id="add-to-cart">Add to Cart</button>
+        </div>
+    </div>
+
+    <script>
+        function changeImage(newSrc) {
+            document.getElementById('main-img').src = newSrc;
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Spartan", sans-serif;
+  background-image: url(Image/bgimg.jpg);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+/* product click details */
+
+/* product click details */
+
+#prodetails {
+  display: flex;
+}
+
+.section-P1{
+  display: flex;
+}
+
+#prodetails .product_detail h3{
+  font-size: 250px;
+}
+
+#prodetails .single-pro-image{
+  border-radius: 100px;
+  width: 70%;
+  margin-right: 50px;
+}
+
+#small-img-group{
+  display: flex;
+  justify-content: space-between;
+}
+
+#prodetails .small-img-coll{
+  flex-basis: 24%;
+  cursor: pointer;
+}
+
+#prodetails .single-pro-detail{
+  width: 50%;
+
+}
+
+#prodetails .product_detail select{
+  
+  display: block;
+  padding: 5px 10px;
+  margin-bottom: 10px;
+}
+
+/* product details */
